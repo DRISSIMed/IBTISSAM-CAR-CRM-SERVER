@@ -1,0 +1,11 @@
+net\ma\ibtissamCar\core\Api\BaseIbtissamCarController.class
+net\ma\ibtissamCar\core\Repository\CustomJPARipositoryImp.class
+net\ma\ibtissamCar\core\view\ModelView$SelectView.class
+net\ma\ibtissamCar\core\view\ModelView$PartialFullView.class
+net\ma\ibtissamCar\core\Repository\CustomJPARepository.class
+net\ma\ibtissamCar\core\view\ModelView.class
+net\ma\ibtissamCar\core\Model\BaseModel.class
+net\ma\ibtissamCar\core\NamingTables\CustomPhysicalNamingStrategy$1.class
+net\ma\ibtissamCar\core\view\ModelView$ListView.class
+net\ma\ibtissamCar\core\view\ModelView$FullView.class
+net\ma\ibtissamCar\core\NamingTables\CustomPhysicalNamingStrategy.class

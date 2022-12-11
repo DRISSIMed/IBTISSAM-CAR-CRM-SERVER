@@ -1,0 +1,9 @@
+net\ma\ibtissamCar\car\Api\CarController.class
+net\ma\ibtissamCar\car\Repository\RangeCarRepository.class
+net\ma\ibtissamCar\car\Repository\TypeCarRepository.class
+net\ma\ibtissamCar\car\Model\RangeCar.class
+net\ma\ibtissamCar\car\Repository\CarRepository.class
+net\ma\ibtissamCar\car\Model\Car.class
+net\ma\ibtissamCar\car\Model\TypeCar.class
+net\ma\ibtissamCar\car\Api\RangeCarController.class
+net\ma\ibtissamCar\car\Api\TypeCarController.class
