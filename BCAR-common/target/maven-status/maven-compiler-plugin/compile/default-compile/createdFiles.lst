@@ -1,0 +1,3 @@
+net\ma\ibtissamCar\common\Model\Comment.class
+net\ma\ibtissamCar\common\Repository\CommentRepository.class
+net\ma\ibtissamCar\common\api\CommentController.class

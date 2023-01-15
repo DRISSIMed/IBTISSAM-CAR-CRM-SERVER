@@ -34,6 +34,9 @@ public class RangeCar extends BaseModel {
     @JsonView(ModelView.SelectView.class)
     private Long capacity;
 
+    @JsonView(ModelView.SelectView.class)
+    private Boolean isReserved;
+
 
     public Long getId() {
         return id;
@@ -97,5 +100,13 @@ public class RangeCar extends BaseModel {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public Boolean getReserved() {
+        return isReserved;
+    }
+
+    public void setReserved(Boolean reserved) {
+        isReserved = reserved;
     }
 }

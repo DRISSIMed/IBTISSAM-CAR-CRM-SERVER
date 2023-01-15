@@ -22,8 +22,7 @@
         <module>BCAR-car</module>
         <module>BCAR-core</module>
         <module>BCAR-common</module>
-        <module>BCAR-common</module>
-        <module>BCAR-common</module>
+        <module>BCAR-client</module>
     </modules>
 
     <properties>

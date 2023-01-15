@@ -41,4 +41,13 @@ public abstract class BaseIbtissamCarController <T,v>{
         return object;
     }
 
+    @CrossOrigin
+    @JsonView(ModelView.ListView.class)
+    @PostMapping(path = "/delete/{id}")
+    public List<T> deleteObjectById(@PathVariable("id") v id){
+        this.repository.deleteById(id);
+        List<T> result = (List<T>) this.repository.findAll();
+        return result.stream().collect(Collectors.toList());
+    }
+
 }

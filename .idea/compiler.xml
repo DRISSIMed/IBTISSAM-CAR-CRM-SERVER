@@ -9,6 +9,7 @@
         <module name="BCAR-common" />
         <module name="BCAR-car" />
         <module name="BCAR-core" />
+        <module name="BCAR-client" />
         <module name="BCAR-main" />
       </profile>
     </annotationProcessing>

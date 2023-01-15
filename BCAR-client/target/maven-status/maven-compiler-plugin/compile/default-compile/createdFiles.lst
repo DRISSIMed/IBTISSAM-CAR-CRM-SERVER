@@ -1,0 +1,6 @@
+net\ma\ibtissamCar\client\Model\Reservation.class
+net\ma\ibtissamCar\client\Model\Client.class
+net\ma\ibtissamCar\client\Api\ReservationController.class
+net\ma\ibtissamCar\client\Api\ClientController.class
+net\ma\ibtissamCar\client\Repository\ClientRepository.class
+net\ma\ibtissamCar\client\Repository\ReservationRepository.class
