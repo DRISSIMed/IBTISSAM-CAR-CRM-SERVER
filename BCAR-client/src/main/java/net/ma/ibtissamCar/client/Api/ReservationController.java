@@ -26,16 +26,16 @@ public class ReservationController extends BaseIbtissamCarController<Reservation
     RangeCarRepository rangeCarRepository;
 
     @CrossOrigin
-    @PostMapping(path="/create/v2/{id}")
-    public ResponseEntity<?> createv2(@PathVariable("id") Long id, @RequestBody Reservation reservation){
-        RangeCar rangeCar=this.rangeCarRepository.findById(id).get();
-
-        if(rangeCar.getReserved()){
-            return ResponseEntity.ok("RESERVED");
+    @PostMapping(path="/create/v2")
+    public ResponseEntity<?> createv2(@RequestBody Reservation reservation){
+        RangeCar rangeCar=this.rangeCarRepository.findById(reservation.getRangeCar().getId()).get();
+        System.out.print("RANGE ==>"+rangeCar.getLibelle());
+        if(rangeCar.getReserved()!=null && rangeCar.getReserved().equals(true) ){
+            return ResponseEntity.ok(ResponseEntity.status(402));
         }
         else{
-            Reservation result= (Reservation) this.repository.save(reservation);
             rangeCar.setReserved(true);
+            Reservation result= (Reservation) this.repository.save(reservation);
             return ResponseEntity.ok(result) ;
         }
 

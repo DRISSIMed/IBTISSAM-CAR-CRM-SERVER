@@ -1,6 +1,7 @@
 package net.ma.ibtissamCar.common.Model;
 
 import com.fasterxml.jackson.annotation.JsonView;
+import net.ma.ibtissamCar.appartement.Model.Appartement;
 import net.ma.ibtissamCar.car.Model.RangeCar;
 import net.ma.ibtissamCar.core.Model.BaseModel;
 import net.ma.ibtissamCar.core.view.ModelView;
@@ -27,6 +28,14 @@ public class Comment extends BaseModel {
     @JoinColumn(name = "range_car_id")
     @JsonView(ModelView.SelectView.class)
     private RangeCar rangeCar;
+
+    @ManyToOne
+    @JoinColumn(name = "appartement_id")
+    @JsonView(ModelView.SelectView.class)
+    private Appartement appartement;
+
+
+
 
     public Long getId() {
         return id;

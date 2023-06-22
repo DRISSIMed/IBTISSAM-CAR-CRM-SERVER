@@ -18,14 +18,27 @@ public class CommentController extends BaseIbtissamCarController<Comment,Long> {
     @Autowired
     CommentRepository repositoryComment;
     @CrossOrigin
-    @GetMapping(path="/get/car/{id}")
-    public List<Comment> getCommentCar(@PathVariable("id") Long id){
-        List<Comment> listCommentCar=this.repositoryComment.getCommentByCar(id);
-        for (Comment elm:listCommentCar) {
-            System.out.print("Comment ==>"+elm.getComment());
+    @GetMapping(path="/get/comment/{id}")
+    public List<Comment> getCommentCar(@PathVariable("id") Long id,@RequestParam String object){
+        if(object.equals("car")){
+            List<Comment> listCommentCar=this.repositoryComment.getCommentByCar(id);
+            for (Comment elm:listCommentCar) {
+                System.out.print("Comment ==>"+elm.getComment());
+
+            }
+            return listCommentCar;
 
         }
-        return listCommentCar;
+        if(object.equals("appartement")){
+            List<Comment> listCommentAppartement=this.repositoryComment.getCommentByAppartement(id);
+            for (Comment elm:listCommentAppartement) {
+                System.out.print("Comment ==>"+elm.getComment());
+
+            }
+            return listCommentAppartement;
+
+        }
+      return null;
     }
 
 }

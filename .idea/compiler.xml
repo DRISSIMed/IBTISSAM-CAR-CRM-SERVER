@@ -2,16 +2,21 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BCAR-common" />
-        <module name="BCAR-car" />
         <module name="BCAR-core" />
-        <module name="BCAR-client" />
         <module name="BCAR-main" />
+        <module name="BCAR-appartement" />
+        <module name="BCAR-car" />
+        <module name="BCAR-client" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BCAR-security" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>

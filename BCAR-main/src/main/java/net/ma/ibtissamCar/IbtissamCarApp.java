@@ -6,7 +6,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.http.HttpStatus;
+
 import org.testng.annotations.Test;
 
 import javax.sql.DataSource;
@@ -20,7 +20,10 @@ public class IbtissamCarApp {
     public static void main(String[] args) {
         SpringApplication.run(IbtissamCarApp.class, args);
     }
-
+/*  @Bean
+    PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
+  }*/
 
     //Testing connection with server database
     @Bean

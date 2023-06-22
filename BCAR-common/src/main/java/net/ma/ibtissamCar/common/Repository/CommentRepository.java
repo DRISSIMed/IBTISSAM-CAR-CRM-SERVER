@@ -10,4 +10,10 @@ import java.util.List;
 public interface CommentRepository extends CustomJPARepository<Comment,Long> {
     @Query("select c from Comment c where c.rangeCar.id=:id")
     List<Comment> getCommentByCar(@Param("id") Long id);
+
+    @Query("select c from Comment c where c.appartement.id=:id")
+    List<Comment> getCommentByAppartement(@Param("id") Long id);
+
+    @Query("select c from Comment c where c.rangeCar.id=:id")
+    List<Comment> getCommentByTours(@Param("id") Long id);
 }

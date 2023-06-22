@@ -1,6 +1,7 @@
 package net.ma.ibtissamCar.client.Model;
 
 import com.fasterxml.jackson.annotation.JsonView;
+import net.ma.ibtissamCar.car.Model.RangeCar;
 import net.ma.ibtissamCar.core.Model.BaseModel;
 import net.ma.ibtissamCar.core.view.ModelView;
 
@@ -40,7 +41,18 @@ public class Reservation extends BaseModel {
     @JsonView(ModelView.SelectView.class)
     private String country;
 
+    @ManyToOne
+    @JoinColumn(name = "range_car_id")
+    @JsonView(ModelView.SelectView.class)
+    private RangeCar rangeCar;
 
+    public RangeCar getRangeCar() {
+        return rangeCar;
+    }
+
+    public void setRangeCar(RangeCar rangeCar) {
+        this.rangeCar = rangeCar;
+    }
 
     public Long getId() {
         return id;

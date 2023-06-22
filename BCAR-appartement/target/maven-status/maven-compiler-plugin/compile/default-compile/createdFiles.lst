@@ -1,0 +1,3 @@
+net\ma\ibtissamCar\appartement\Model\Appartement.class
+net\ma\ibtissamCar\appartement\Api\AppartementController.class
+net\ma\ibtissamCar\appartement\Repository\AppartementRepository.class

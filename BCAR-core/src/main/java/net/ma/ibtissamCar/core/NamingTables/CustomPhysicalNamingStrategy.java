@@ -18,6 +18,7 @@ public class CustomPhysicalNamingStrategy  extends SpringPhysicalNamingStrategy 
         put("Comment","BCAR_");
         put("Client","BCAR_");
         put("Reservation","BCAR_");
+        put("Appartement","BCAR_");
 
     }};
 
